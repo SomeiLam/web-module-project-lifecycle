@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 62.5%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS reset */
+* {
+  /* border: 1px black solid; */
+}
+
+.App {
+  text-align: center;
+  background-color: #EAD8C3;
+  height: 100vh;
+  padding: 5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #6B705C;
+}
+
+.search-user form{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 2% 0 5% 0;
+}
+
+.search-user form input {
+  padding: 5px 10px;
+}
+
+.search-user form button {
+  background-color: #FFE8D6;
+  border: 2px #6B705C solid;
+  color: #3F4248;
+  border-radius: 10px;
+}
+
+.search-user form button:hover {
+  background-color: #3F4248;
+  color: #FFE8D6;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px #6D4A37 dotted;
+  border-radius: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.user-image {
+  width: 300px;
+  margin: 10% 0 2% 0;
+  border-radius: 100%;
+}
+
+.name {
+  font-size: 2rem;
+  margin: 2%;
+  color: #3F4238;
+  font-weight: bold;
+}
+
+.bio {
+  font-size: 1.2rem;
+  margin: 1%;
+}
+
+.repo {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+a {
+  margin: 5% 0 8% 0;
+  text-decoration: none;
+  color: #404337;
+}
+
+a:hover {
+  color: #6D4A37;
+  text-decoration: underline;
+}
+
+.user-list {
+  margin: 1%;
+  width: 200px;
+}
+
+.open {
+  margin: 0 auto;
+  background-color: #FFE8D6;
+  border: 1px #6B705C solid;
+  color: #3F4248;
+  padding: 3px 8px;
+  border-radius: 10px;
+  width: 30%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  cursor: default;
+}
+
+.followers-wrapper {
+  list-style-type: "→  ";
+}
+
+.follower-list {
+  margin: 1%;
+  text-align: start;
+  padding: 5px;
+  cursor: pointer;
+}
+
